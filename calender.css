@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.bhutanese-calendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.20); /* Add shadow effect here */
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.view-toggle {
+    margin-bottom: 10px;
+}
+
+.view-toggle button {
+    background-color: #005bb5;
+    margin: 0 5px;
+}
+
+.view-toggle button:hover {
+    background-color: #fac209;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.day {
+    background: #fac209;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dates {
+    display: contents;
+}
+
+.date {
+    padding: 15px;
+    border: 1px solid #4a878f;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.date:hover {
+    background-color: #e0e0e0;
+}
+
+.holiday, .sunday {
+    background-color: rgb(238, 119, 119);
+    color: white;
+}
+
+.today {
+    background-color: #ffc107;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.week-view .day {
+    display: none;
+}
+
+.week-view .date {
+    width: 100%;
+    grid-column: span 7;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .bhutanese-calendar {
+        padding: 15px;
+    }
+
+    .calendar-header h1 {
+        font-size: 18px;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .view-toggle button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f4f4f9;
+}
+header {
+    background: linear-gradient(135deg, #0056b3, #fac209);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 0.5rem;
+    color: #0f0c03;
+}
+
+h2{
+    color: black;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    margin: 0 1rem;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+}
+
+.year-content ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    text-align: left;
+}
+/*delete*/
+.year-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+
+}
+.tab {
+    padding: 0.5rem 1rem;
+    background-color: #e8eaf6;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.tab:hover {
+    background-color: #c5cae9;
+}
+.year-content {
+    display: none;
+}
+.year-content.active {
+    display: block;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+.skill video {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.skill:hover video {
+    transform: scale(1.1);
+}
+
+
+#background-video {
+    width: 100vw;  /* Full viewport width */
+    height: 500px; /* Fixed height */
+    object-fit: cover; /* Ensures the video covers the entire area */
+  }
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+    
+    .year-tabs {
+        flex-direction: column;
+    }
+}
+
+
+

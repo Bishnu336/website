@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #070707;
+  }
+  
+  .header {
+    background: #fac209;
+    color: rgb(5, 5, 5);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #070707;
+  }
+  
+  .header p {
+    font-size: 1rem;
+    color: #fff;
+
+  }
+  
+  
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background: #eef2f9;
+    border-radius: 8px;
+  }
+  
+  .facilities h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .facility {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    background: rgb(7, 7, 7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .facility img {
+    flex: 1 1 300px;
+    max-width: 100%;
+    height: 200px;
+  }
+  
+  .facility-info {
+    flex: 2;
+    padding: 1rem;
+  }
+  
+  .facility-info h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .facility-info p {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .facility {
+      flex-direction: column;
+    }
+  }
+  

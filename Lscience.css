@@ -1,0 +1,173 @@
+/* General Styles for the Life Science Program */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .life-science-program {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+  }
+  
+  h1, h2 {
+    color: #4d4d4d;
+    text-align: center;
+  }
+  
+  /* Intro Section */
+  .intro {
+    background: linear-gradient(135deg, #0056b3, #fac209);
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 36px;
+  }
+  
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Course Objectives Section */
+  .course-objectives {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-objectives ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-objectives li {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .course-objectives li:hover {
+    background-color: #b2dfdb;
+    transform: translateY(-5px);
+  }
+  
+  /* Modules Section */
+  .year-modules {
+    display: none;  /* Initially hidden */
+    margin-top: 30px;
+  }
+  
+  .modules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .module-card {
+    background-color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .module-card:hover {
+    background-color: #d1c4e9;
+    transform: translateY(-5px);
+  }
+  
+  .module-card:active {
+    background-color: #b39ddb;
+    transform: translateY(2px);
+  }
+  
+  /* Navigation Buttons */
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .navigation-buttons button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #fac209;
+  }
+
+
+  #background-video {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .intro h1 {
+      font-size: 28px;
+    }
+  
+    .intro-text {
+      font-size: 16px;
+    }
+  
+    .modules-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .module-card {
+      font-size: 14px;
+    }
+  
+    .course-objectives ul {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro h1 {
+      font-size: 24px;
+    }
+  
+    .intro-text {
+      font-size: 14px;
+    }
+  
+    .module-card {
+      font-size: 12px;
+    }
+  
+    .course-objectives ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  

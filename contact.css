@@ -1,0 +1,153 @@
+ /* General Styling */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f1c40f, #e67e22);
+    color: #333;
+    overflow-x: hidden;
+}
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Section Styling */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: cardAnimation 1.2s ease-in-out forwards;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h3 {
+    color: #e67e22;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.contact-card a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animation for Card */
+@keyframes cardAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hidden Content Styling */
+.card-details {
+    display: none;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    transition: all 0.5s ease;
+}
+
+.contact-card:hover .card-details {
+    display: block;
+    transform: translateY(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 15px;
+    }
+    .contact-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Feedback Form Styling */
+.feedback-form-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    animation: formAnimation 1s ease-in-out forwards;
+}
+
+.feedback-form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form-container input, .feedback-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.feedback-form-container button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feedback-form-container button:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+@keyframes formAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
