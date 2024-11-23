@@ -1,0 +1,205 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Container for consistent page width */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header styling */
+  header {
+    background: linear-gradient(135deg, #0056b3, #fac209);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #003A6E;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Styling for main content sections */
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #004B8D;
+  }
+  
+  /* Dates section styling */
+  .dates p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  /* Tuition Fees Section */
+  .tuition p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Scholarship Section */
+  .scholarship ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .scholarship ul li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+  }
+  
+  /* Eligibility table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #004B8D;
+    color: white;
+    font-size: 1.1em;
+  }
+  
+  table td {
+    font-size: 1.1em;
+  }
+  
+  /* Contact Form Section */
+  .contact-form form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  .contact-form button {
+    background-color: #004B8D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #003a6e;
+  }
+  
+  
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust the container width for smaller screens */
+    .container {
+      width: 90%;
+    }
+  
+    /* Adjust header text size for smaller screens */
+    header h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.6em;
+    }
+  
+    /* Adjust the table padding */
+    table th, table td {
+      padding: 10px;
+    }
+  
+    /* Make form input fields full-width */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce font sizes for mobile */
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      font-size: 1.4em;
+    }
+  
+    .contact-form label {
+      font-size: 1em;
+    }
+  
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+      font-size: 1em;
+      padding: 8px;
+    }
+  
+    .contact-form button {
+      font-size: 1.1em;
+    }
+  
+    table th, table td {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  }
+  
